@@ -1,10 +1,19 @@
-body {
+@font-face {
+    font-family: "CourierPrimeRegular";
+    src: url(fonts/CourierPrime.ttf) format("truetype");
+}
 
-    line-height: 1;
-    font-size: 14pt;
-    margin: 20px 20px;
-    max-width: 800px;
+@font-face {
+    font-family: "CourierPrimeItalic";
+    src: url(fonts/CourierPrimeItalic.ttf) format("truetype");
+}
+
+body {
+    font-size: 24px;
     color: #000000;
+    margin: 8px;
+    display: block;
+    width: 888px;
 }
 
 a:hover {
@@ -17,16 +26,21 @@ a {
     color: #000000;
 }
 
+i {
+  font-family: 'CourierPrimeItalic';
+}
+
+.g {
+  letter-spacing: 0.35em;
+}
+
 pre {
-    margin: 10px 10px;
+    font-family: 'CourierPrimeRegular';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.1;
+    margin: 0 0;
     word-wrap: break-word;
     white-space: pre-wrap;
     display: block;
-    font-family: monospace;
-    line-height: 100%;
-}
-
-pre[type=content] {
-    line-height: 150%;
-    /* margin-top: 0; */
 }
